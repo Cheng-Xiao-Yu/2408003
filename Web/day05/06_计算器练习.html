@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+</head>
+<body>
+<input type="text" id="a1" placeholder="请输入数字1"> <br>
+<input type="text" id="a2" placeholder="请输入数字2">
+<br>
+<button onclick="f1('+')">加</button>
+<button onclick="f1('-')">减</button>
+<button onclick="f1('*')">乘</button>
+<button onclick="f1('/')">除</button>
+<br>
+<h4>运算结果：<span></span></h4>
+<script>
+  function f1(o){
+      let n1=document.getElementById('a1').value;
+      let n2=document.getElementById('a2').value;
+      n1=parseFloat(n1);
+      n2=parseFloat(n2);
+      let spanE=document.querySelector('span');
+      console.log(spanE);
+      switch (o){
+          case '+':
+              spanE.innerHTML=n1+n2;
+              break;
+          case '-':
+              spanE.innerHTML=n1-n2;
+              break;
+          case '*':
+              spanE.innerHTML = n1 * n2;
+              break;
+          case '/':
+              if(n2!=0){
+                  spanE.innerHTML = n1 / n2;
+              }else{
+                  alert('除数不能为0!');
+              }
+      }
+  }
+</script>
+</body>
+</html>

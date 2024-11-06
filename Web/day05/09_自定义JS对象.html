@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09_自定义JS对象</title>
+</head>
+<body>
+<table>
+    <caption>商品表</caption>
+
+</table>
+<script>
+    /*let productArr=[
+        {title:'小米14',price:8000,num:200},
+        {title:'华为Mate60',price:5000,num:100},
+        {title:'苹果16',price:10000,num:700},
+        {title:'魅族',price:2000,num:500}
+    ];
+    let table=document.querySelector('table');
+    for (let i=0;i<productArr.length;i++){
+        let tr=document.createElement('tr');
+        let tt=document.createElement('td');
+        let pr=document.createElement('td');
+        let nm=document.createElement('td');
+        tt.innerHTML=productArr[i].title;
+        pr.innerHTML=productArr[i].price;
+        nm.innerHTML=productArr[i].num;
+        tr.append(tt,pr,nm);
+    }
+*/
+    let p1={
+        name:'张三',
+        age:18,
+        say:function (){
+            console.log('我是'+this.name+'，今年'+this.age+'岁')
+        }
+    };
+    console.log(p1.name);
+    console.log(p1);
+    console.log(p1.age);
+    p1.say();
+    let p2={};
+    p2.name='张三';
+    p2.age=18;
+    p2.say=function (){
+        console.log('我是'+this.name+'，今年'+this.age+'岁')
+    };
+    console.log(p2.name);
+    console.log(p2);
+    console.log(p2.age);
+    p2.say();
+
+</script>
+</body>
+</html>

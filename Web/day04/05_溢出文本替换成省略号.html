@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05_溢出文本替换成省略号</title>
+    <style>
+        div{
+            background-color: yellow;
+            width: 200px;
+            /*以下三句话为组合代码，缺一不可*/
+            white-space: nowrap; /*不允许换行*/
+            overflow: hidden;/*溢出部分隐藏*/
+            text-overflow: ellipsis;/*溢出的文本替换成省略号*/
+        }
+    </style>
+</head>
+<body>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aliquam aperiam deleniti error laboriosam reiciendis suscipit tempore! Aspernatur in nam rerum. Consequatur cum deleniti maiores molestiae, quisquam ratione recusandae sunt!</div>
+</body>
+</html>

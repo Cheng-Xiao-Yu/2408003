@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07_浮动布局练习</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .center{
+            width: 1004px;
+            margin: 0 auto;
+        }
+        .f1>.left{
+            width: 611px;
+            height: 376px;
+            background-color: gray;
+            margin-right: 10px;
+            float: left;
+        }
+        .f1>.right{
+            width: 375px;
+            height: 376px;
+            background-color: yellow;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="center">
+        <div class="f1">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <div class="f2">
+            <div class="left"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

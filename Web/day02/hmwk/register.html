@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<body>
+<h1>欢迎注册</h1>
+<form action="#">
+    <table border="1px">
+    <tr>
+        <td>用户名</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>密码</td>
+        <td><input type="password"></td>
+    </tr>
+    <tr>
+        <td>性别</td>
+        <td>
+            <input type="radio" name="gender" value="male" checked id="a"><label for="a">男</label>
+            <input type="radio" name="gender" value="female" id="v"><label for="v">女</label>
+        </td>
+    </tr>
+    <tr>
+        <td>爱好</td>
+        <td>
+            <input type="checkbox" name="hobby" value="cy" id="y"><label for="y">抽烟</label>
+            <input type="checkbox" name="hobby" value="hj" id="j"><label for="j">喝酒</label>
+            <input type="checkbox" name="hobby" value="tt" checked id="t"><label for="t">烫头</label>
+        </td>
+    </tr>
+    <tr>
+        <td>地址</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>生日</td>
+        <td><input type="date"></td>
+    </tr>
+    <tr>
+        <td>靓照</td>
+        <td><input type="file"></td>
+    </tr>
+    <tr>
+        <td>所在地</td>
+        <td><select name="city" id="1">
+            <option value="bj" selected>北京</option>
+            <option value="nj">南京</option>
+            <option value="xj">西京</option>
+            <option value="dj">东京</option>
+        </select></td>
+    </tr>
+    <tr align="center">
+        <td colspan="2"><input type="checkbox" name="agree" value="1" id="2"><label for="2">我同意相关的服务协议</label></td>
+    </tr>
+    <tr align="center">
+        <td colspan="2" ><input type="submit" value="提交"></td>
+    </tr>
+</table>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08_相对定位</title>
+    <style>
+        .fu{
+            background-color: #ff0;
+        }
+        .fu>div{
+            width: 100px;
+            height: 100px;
+        }
+        .z1{
+            background-color: #F00;
+            position: relative;
+            z-index: 5;
+        }
+        .z2{
+            background-color: #0F0;
+            /*相对定位；参照物为自己原来的位置，不会脱离文档流（释放布局空间）*/
+            position: relative;
+            /*使用定位属性后，可以使用上下左右微调自己的位置*/
+            right: 50px;
+            bottom: 50px;
+            /*使用定位属性后可以使用z-index调整层级 整数，无单位*/
+            z-index: 6;
+        }
+        .z3{
+             background-color: #00F;
+         }
+    </style>
+</head>
+<body>
+<div class="fu">
+    <div class="z1"></div>
+    <div class="z2"></div>
+    <div class="z3"></div>
+</div>
+</body>
+</html>

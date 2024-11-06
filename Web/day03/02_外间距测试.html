@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02_外间距测试</title>
+    <style>
+<!--去掉body元素四个方向的外间距-->
+        body{
+            margin: 0;
+        }
+        /*去掉四个元素自带的所有内外间距*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .fu{
+            background-color: rgba(255,255,0,.3);
+            overflow: hidden;
+        }
+        .fu>div{
+            width: 100px;
+            height: 100px;
+            background-color: rgba(0,0,255,.6);
+            border: 2px solid #00f;
+            color: #fff;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .z1{
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+        .z2{
+            margin-top: 50px;
+        }
+        .z4{
+            margin-bottom: 50px;
+        }
+        .z3{
+            margin: 10px;/*四个方向外间距都是10px*/
+            margin: 10px 20px;/*上下10px，左右20px*/
+            margin: 10px 20px 30px;/*上10px，右20px，下30px，左没有值取右边一样的20px*/
+            margin: 10px 20px 30px 40px;/*上左下右*/
+            margin: 0 auto;/*实现块级元素自身的水平居中，auto会自动将元素的左右外间距计算成相等的值*/
+        }
+        span{
+            border: 5px solid red;
+        }
+        .s2{
+            margin: 50px    ;
+        }
+    </style>
+</head>
+<body><!--.fu>.zi*4-->
+<span>span1</span><span class="s2">span2</span><span>span3</span>
+<div class="fu">
+    <div class="z1">子元素1</div>
+    <div class="z2">子元素2</div>
+    <div class="z3">子元素3</div>
+    <div class="z4">子元素4</div>
+</div>
+</body>
+</html>

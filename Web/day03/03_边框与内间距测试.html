@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03_边框与内间距测试</title>
+    <style>
+        .d1{
+            width: 200px;
+            height: 200px;
+            background-color: #0aa1ed;
+            /*设置单方向边框*/
+            border-top: 9px dotted #f0f;
+            border: 5px solid #f00;
+            /*边框圆角：值越大，角越圆，值为正方形宽高的一半可切圆形*/
+            border-radius: 20px;
+        }
+        .d2{
+            width: 200px;
+            height: 60px;
+            background-color: cyan;
+            /*边框圆角值为长方形高度的一半可以切成胶囊型*/
+            border-radius: 30px;
+        }
+        .d3{
+            width: 200px;
+            height: 100px;
+            background-color: cyan;
+            border-radius: 100px/50px;
+        }
+        .d4{
+            width: 200px;
+            height: 200px;
+            background-color: cyan;
+            /*加边框与内间距都会使元素变大*/
+            border: 10px solid blue;
+            padding-left: 50px;
+            /*外间距会影响页面布局空间，但外间距不属于元素本身*/
+            margin: 50px;
+        }
+        .d5{
+            width: 200px;
+            height: 200px;
+            background-color: cyan;
+            border: 10px solid blue;
+            padding-left: 50px;
+            margin: 50px;
+            box-sizing: border-box;
+        }
+        span{
+            background-color: cyan;
+        }
+        .s2{
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    <div class="d4">内间距测试</div>
+    <div class="d5">内间距测试2</div>
+    <!--行内元素垂直方向上的内外间距都不生效-->
+    <span>span1</span><span class="s2">span2</span><span>span3</span>
+    <h1>标题红红火火恍恍惚惚或或</h1>
+</body>
+</html>

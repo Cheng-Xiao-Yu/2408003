@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08_员工列表练习</title>
+</head>
+<body>
+<input type="text" id="t1" placeholder="请输入员工姓名">
+<input type="text" id="t2" placeholder="请输入员工工资">
+<input type="text" id="t3" placeholder="请输入员工岗位">
+<button onclick="add()">添加员工</button>
+<hr>
+<table border="1px">
+    <caption>员工表</caption>
+    <tr>
+        <th>姓名</th>
+        <th>工资</th>
+        <th>岗位</th>
+    </tr>
+</table>
+<script>
+    let arr=[];
+    function add(){
+        let uName=document.getElementById('t1').value;
+        let uSalary=document.getElementById('t2').value;
+        let uJob=document.getElementById('t3').value;
+        let tr=document.createElement('tr');
+        let nameTd=document.createElement('td');
+        let salaryTd=document.createElement('td');
+        let jobTd=document.createElement('td');
+        nameTd.innerHTML
+        tr.append(nameTd,salaryTd,jobTd);
+    }
+</script>
+</body>
+</html>

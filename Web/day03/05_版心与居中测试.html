@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05_版心与居中测试</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            background-color: #ff0;
+        }
+        .center{
+            background-color: lightblue;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .card{
+            width: 200px;
+            height: 300px;
+            border: 1px solid #f00;
+            background-color: lawngreen;
+            /*让块卡片自己水平居中*/
+            margin: 0 auto;
+            /*让卡片内的文字在卡片内水平居中*/
+            text-align: center;
+        /*    让卡片的行高和卡片的高度一致,实现文字在卡片的垂直居中*/
+            line-height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="center">
+        <div class="card"><input type="submit"></div>
+        <div class="card">卡片</div>
+        <div class="card">卡片</div>
+        <div class="card">卡片</div>
+    </div>
+</div>
+</body>
+</html>

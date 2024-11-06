@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11_学子页面</title>
+    <style>
+        a>{
+            text-decoration: none;
+        }
+        .center {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .f1 {
+            overflow: hidden;
+        }
+        .f1>.left {
+            width: 611px;
+            height: 376px;
+            background-color: gray;
+            float: left;
+            margin-right: 10px;
+        }
+        .f1>.left>.text {
+            width: 245px;
+            height: 232px;
+            background-color: pink;
+            margin-right: 10px;
+            margin-left: 36px;
+            margin-top: 68px;
+        }
+        .f1 .text>.p_title{
+            font-size: 32px;
+            color: #333;
+            font-weight: lighter;
+            margin-bottom: 12px;
+        }
+        .f1 .text>.p_intro{
+            font-size: 12px;
+            color: #666;
+            font-weight: lighter;
+            margin-bottom: 24px;
+        }
+        .f1 .text>.p_price{
+            font-size: 24px;
+            color: #0aa1ed;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        .f1>.left>.text>a{
+            display: block;
+            width: 132px;
+            height: 40px;
+            font-size: 20px;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            line-height: 40px;
+            background-color: #0aa1ed;
+            border-radius: 5px;
+        }
+        .f1>.right {
+            width: 375px;
+            height: 376px;
+            background-color: yellow;
+            float: left;
+        }
+        .f2 {
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .f2>.left {
+            width: 366px;
+            height: 233px;
+            background-color: pink;
+            float: left;
+            margin-right: 20px;
+        }
+        .f2>.card {
+            width: 198px;
+            height: 233px;
+            background-color: #0aa1ed;
+            float: left;
+            margin-right: 8px;
+        }
+        .f2>.card3 {
+            margin-right: 0;
+        }
+        .f2>.left>.tit{
+            height: 35px;
+            background-color: #0aa1ed;
+            position: relative;
+        }
+        .f2>.left>.tit>img{
+            width: 29px;
+            height: 20px;
+            position: absolute;
+            top: 8px;
+            left: 10px;
+        }
+        .f2>.left>.tit>span{
+            left: 49px;
+            position: absolute;
+            line-height: 35px;
+            color: #fff;
+        }
+        .f2>.left>.item_all{
+            padding-left: 12px;
+        }
+        .f2>.left>.item_all>ul{
+            overflow: hidden;
+            list-style: none;
+        }
+        .f2>.left>.item_all>ul>li{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="center">
+        <div class="f1">
+            <div class="left">
+                <div class="text">
+                    <p class="p_title">灵越 燃7000系列</p>
+                    <p class="p_intro">酷睿双核i5处理器|256GB SSD| 8GB内存
+                        <br>英特尔HD显卡620含共享显卡内存
+                    </p>
+                    <p class="p_price">￥4999.00</p>
+                    <a href="#">查看详情</a>
+                </div>
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="f2">
+            <div class="left">
+                <div class="tit">
+                    <img src="img/icon.png" alt="6">
+                    <span>电脑，办公/1F</span>
+                </div>
+                <div class="item_all">
+                    <p>电脑整机</p>
+                    <ul>
+                        <li><a href="#">笔记本</a></li>
+                        <li><a href="#">游戏机</a></li>
+                        <li><a href="#">台式机</a></li>
+                        <li><a href="#">一体机</a></li>
+                        <li><a href="#">服务器</a></li>
+                        <li><a href="#">联想</a></li>
+                    </ul>
+                    <p>电脑配件</p>
+                    <ul>
+                        <li><a href="#">CPU</a></li>
+                        <li><a href="#">SSD硬盘</a></li>
+                        <li><a href="#">显示器</a></li>
+                        <li><a href="#">显卡</a></li>
+                        <li><a href="#">组装电脑</a></li>
+                        <li><a href="#">机箱</a></li>
+                    </ul>
+                    <p>外设/游戏</p>
+                    <ul>
+                        <li><a href="#">键盘</a></li>
+                        <li><a href="#">鼠标</a></li>
+                        <li><a href="#">U盘</a></li>
+                        <li><a href="#">移动硬盘</a></li>
+                        <li><a href="#">游戏设备</a></li>
+                        <li><a href="#">智能单车</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card"><img src="img/computer4.png" alt="6"></div>
+            <div class="card"></div>
+            <div class="card card3"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

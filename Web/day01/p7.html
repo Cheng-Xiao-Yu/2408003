@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单提交</title>
+</head>
+<body>
+<form action="#">
+<!--value属性用来保存输入框的值，也可以设置输入框的默认值
+value如果设置在按钮上，用来设置按钮显示的文本-->
+    用户名：<input type="text" name="uname" value="teeth"> <br>
+<!--单值属性：readonly：只读（只能看不能改） disabled：禁用（只能看不能改，且值不能提交）-->
+    密码：<input type="password" name="upsw" placeholder="请输入密码"> <br>
+    性别：<input type="radio" name="gender" value="1" checked>男
+    <input type="radio" name="gender" value="2">女<br>
+    爱好： <input type="checkbox" name="hobby" value="cy" id="y">
+    <label for="y">抽烟</label>
+    <input type="checkbox" name="hobby" value="hj" id="j">
+    <label for="j">喝酒</label>
+    <input type="checkbox" name="hobby" value="tt" checked id="t">
+    <label for="t">烫头</label>
+    <input type="checkbox" name="hobby" value="jv" id="JA">
+    <label for="JA">java</label><br>
+    生日：
+    <input type="date" name="birthday">
+    <br>
+    颜色：
+    <input type="color" name="color">
+    <br>
+    缩放：
+    <input type="range" name="size">
+    <br>
+    <input type="file" name="uf">
+    <br>
+    所在城市：<select name="city" id="1">
+        <option value="bj">北京</option>
+        <option value="nj" selected>南京</option>
+        <option value="xj">西京</option>
+        <option value="dj">东京</option>
+    </select>
+    <br>
+    <label for="6">点我输入</label>
+    <input type="text" placeholder="请输入" id="6"><br>
+    <input type="checkbox" name="xieyi" id="ok">
+    <label for="ok">我不同意</label>
+    <br>
+    留言板： <br><textarea name="content" id="masthead-label-1" cols="10" rows="5" style="resize: none">默认文本</textarea><br>
+    <input type="submit" value="提交表单">
+    <input type="reset" value="重置按钮">
+    <input type="button" value="普通按钮">
+    <button>这个也是普通按钮</button>
+</form>
+</body>
+</html>

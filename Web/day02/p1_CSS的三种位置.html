@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p1_CSS的三种位置</title>
+    <!-- 3.CSS外部样式
+rel="stylesheet"表示引入的文件类型是CSS
+href引入的CSS文件路径 -->
+    <link rel="stylesheet" href="01.css">
+    <!-- 2.CSS内部样式-->
+    <style>
+        p{
+            color: orange;
+        }
+        div{
+            color: aqua;
+        }
+        h2{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+<!--css行内样式：加在当前行，只对当前行元素生效-->
+<h4 style="color: red;background-color: orange">标题1</h4>
+<h4>标题2</h4>
+<h4>标题3</h4>
+<p>段落</p>
+<p>段落</p>
+<p>段落</p>
+<p>段落</p>
+<div>div</div>
+<div>div</div>
+<div>div</div>
+<div>div</div>
+<h2 style="color: red;>优先级</h2>
+</body>
+</html>

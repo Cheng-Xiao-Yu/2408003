@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03_元素的消失方式</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .d1{
+            background-color: lightgreen;
+            /*transition: 0.1s;*/
+        }
+        .d1:hover{
+            transform: scale(0);
+        }
+        .d2{background-color: lightpink;
+        }
+        .d2:hover{display: none;}
+        .d3{background-color: lightsalmon;
+            }
+        .d3:hover{
+            opacity: 0;
+        }
+        .d4{background-color: lightcoral;
+        border: 1px solid #000}
+        .d4:hover{background-color: rgba(0,0,0,0)}
+    </style>
+</head>
+<body>
+<div class="d1">11</div>
+<div class="d2">22</div>
+<div class="d3">33</div>
+<div class="d4">44</div>
+</body>
+</html>

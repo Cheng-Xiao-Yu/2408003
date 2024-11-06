@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3_数据类型</title>
+</head>
+<body>
+<script>
+    //JS数据类型 = 原始类型 + 引用类型
+    //原始类型:number string boolean undefined未定义型 null
+    //typeof:用来推断数据类型
+    //var a = 1;
+    //var b = 3.14;
+    //console.log(a, typeof a, b, typeof b);
+    var c = '你好';
+    var d = "你好~";
+    console.log(c, typeof c, d, typeof d);
+    var e = true;
+    var f = false;
+    console.log(e, typeof e, f, typeof f);
+    var g;
+    console.log(g, typeof g);//声明变量但未赋值就会得到undefined未定义型
+
+    //引用类型 Object Array Function Number Boolean...
+    let obj = {
+        name: '张三',
+        age: 18
+    };
+    console.log(obj, typeof obj);//{name:'张三',age:18} 'object'
+    console.log(obj.name);//张三
+    console.log(obj.age);//18
+    obj.age = 19;
+    console.log(obj.age);//19
+    obj.like = '吃火锅';
+    console.log(obj, typeof obj);//{name:'张三',age:19,like:'吃火锅'} 'object'
+    console.log(obj.like);//吃火锅=>后期可以动态的给对象新增属性
+    obj.play;
+    console.log(obj.play);//undefined 访问对象不存在的属性也会得到undefiend!
+
+    //JS数组
+    let arr = ['周一',3,5.8,true];
+    console.log(arr);
+    console.log(arr[0]);
+    console.log(arr[1]);
+    console.log(arr[2]);
+    console.log(arr[3]);
+    console.log(arr[33]);//访问数组不存在的下标也会得到undefined
+
+    //Boolean()将参数转为布尔类型
+    //0 undefined null NaN '' 这5个特殊值转为布尔都是false,其余情况都是true!
+    console.log(Boolean(0));//false
+    console.log(Boolean(undefined));//false
+    console.log(Boolean(null));//false
+    console.log(Boolean(NaN));//false
+    console.log(Boolean(''));//false
+    console.log(Boolean(' '));//true
+    console.log(Boolean(1));//true
+    console.log(Boolean('你好'));//true
+
+    //Number()将参数转为数字类型,如果得不到数字类型的结果,会得到NaN(Not a Number)
+    console.log(Number(true),typeof Number(true));//1 'number'
+    console.log(Number(false),typeof Number(false));//0 'number'
+    console.log(Number(3),typeof Number(3));//3 'number'
+    console.log(Number('3'),typeof Number('3'));//3 'number'
+    console.log(Number('哈哈哈'),typeof Number('哈哈哈'));//NaN 'number'
+
+    console.log(6/3);
+    console.log(3/2);
+    console.log(3>10);
+    console.log(3>'10');
+
+    let a1=1;
+    let b1=true;
+    console.log(a1==b1);
+    console.log(a1===b1);
+</script>
+
+</body>
+</html>

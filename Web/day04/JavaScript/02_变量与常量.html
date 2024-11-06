@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02_变量与常量</title>
+</head>
+<body>
+<script>
+    //1.使用关键字var来声明变量
+    var a = 1;
+    //2.变量的值可以被修改为不同的类型
+    a=6.6;
+    a=false;
+    console.log(a);
+    //3.用var声明的变量可以重复声明
+    var a = '嘿嘿嘿我又来了';
+    console.log(a);
+
+    //4.let关键字也可以用于声明变量
+    let x = 1;
+    x = 6.6;
+    console.log(x);
+    //5.使用let声明的变量不可以重复声明!会报错!
+    //let x = true;
+    //console.log(x);
+
+    //6.使用const关键字来声明常量
+    const y = 1;
+    console.log(y);
+    //常量的值不允许被修改!
+    //y = 2;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_js的三种位置</title>
+</head>
+<body>
+<!--1、行内写法，写在对应的HTML元素上
+onclick=""给当前元素绑定一个点击事件 点击元素时触发执行""里的代码
+alert() 显示弹窗，括号里是弹窗要显示的文本内容，注意括号里引号为单引号
+console.log()向浏览器控制台输出指定内容-->
+<button onclick="alert('请先登录')">点击即玩</button>
+<button onclick="console.log('点我干嘛')">点击即玩2</button>
+<h1 id="t1">标题</h1>
+<!--2、内部写法，写在body结束标签之前-->
+<script>01.js
+  console.log('你好星期六');
+  // 可以通过id值获取完整的html元素
+  console.log(t1);
+</script>
+<script src=""></script>
+</body>
+</html>

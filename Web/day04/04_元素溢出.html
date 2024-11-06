@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04_元素溢出</title>
+    <style>
+        div{
+            background-color: blue;
+            /*想要溢出必须预设div的大小，否则div会被内容撑起来，不会溢出。*/
+            width: 700px;
+            height: 1000px;
+            overflow: visible;/*默认溢出的选项，溢出可见*/
+            overflow: hidden;/*溢出隐藏，多余的部分直接裁掉*/
+            overflow: scroll;/*显示两个方向的拖拽条，不论是否溢出*/
+            overflow: auto;/*哪个方向溢出，哪个方向显示拖拽条*/
+        }
+        img{
+            width: 300px;
+            vertical-align: baseline;/*基线对齐 默认值*/
+            vertical-align: bottom;/*底线对齐*/
+            vertical-align: top;/*顶线对齐*/
+            vertical-align: middle;/*中线对齐*/
+        }
+    </style>
+</head>
+<body>
+abyj <img src="../day01/1.png" alt="">国圈<img src="../day01/1.png" alt="">
+<div>
+    <img src="../day01/1.png" alt="">
+    <img src="../day01/1.png" alt="">
+    <img src="../day01/1.png" alt="">
+    <img src="../day01/1.png" alt="">
+</div>
+</body>
+</html>

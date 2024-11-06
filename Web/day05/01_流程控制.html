@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_流程控制</title>
+</head>
+<body>
+<script>
+    /*let username='1';
+    if (!username){
+        alert('用户名不能为空')
+    }else {
+        alert('欢迎'+username+'回归！')
+    }*/
+    let gender=10;
+    switch (gender){
+        case 1:
+            console.log('男');
+            break;
+        case 0:
+            console.log('女');
+            break;
+        default :
+            console.log('未知')
+    }
+    let names=['张三','张三','张三','张三','张三','张三']
+    for (var i=0;i<names.length;i++){
+        console.log(names[i]);
+    }
+    //console.log('循环结束'+i);
+    for (let n of names){
+        console.log(n)
+    }
+
+</script>
+</body>
+</html>

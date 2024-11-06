@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片插入</title>
+</head>
+<body>
+<!--src用来保存图片的路径 alt用来保存图片加载失败的替换文字信息-->
+<!--从当前html文件出发去找资源，
+1.图片与html文件在同一级目录，直接写图片全名1.png
+2.图片在html文件的下一级目录，先写文件夹名，再写/1.png
+3.图片在html文件的上一级目录，先..回到上一级目录，再写/1.png-->
+<img src="1.png" alt="111">
+<img src="img/2.jpg" alt="哎呀，图片被外星人偷走了！！！">
+<img src="../day001/3.png" alt="哎呀，图片被外星人偷走了！！！">
+<hr>
+</body>
+</html>

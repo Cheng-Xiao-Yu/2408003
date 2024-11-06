@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02_函数</title>
+</head>
+<body>
+<script>
+    function f1(){
+        console.log('f1被调用了');
+    }
+    f1();
+    function f2(n){
+        console.log('f2被调用了');
+        console.log(n);
+    }
+    f2(1);
+    f2(false);
+    f2('hello');
+    function f3(x,y){
+        console.log(x+y);
+    }
+    f3(1,2);//3
+    f3(1,2,3);//3 当实参个数大于形参个数时，多余的实参会被舍弃掉
+    f3(1);
+    var result=f3(3,4);
+    //console.log(result);
+    console.log(result);
+    console.log(f3(3,5))
+    var f5=function () {
+        console.log('f5')
+    }
+    f5();
+    console.log(f5,typeof f5);
+    const f6=(n)=>{
+        console.log('f6')
+        console.log(n)
+    }
+    f6(666);
+</script>
+</body>
+</html>

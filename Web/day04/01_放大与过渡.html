@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_放大与过渡</title>
+  <style>
+    div{
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+      margin: 100px auto 0;
+      /*给变换增加过渡时间，否则变换效果过于突兀
+      注意：过渡不能加在悬停里面，需要加载元素本身，否则只在悬停过程中产生效果，移除时没有*/
+      transition: 1s;
+    }
+    div:hover{
+      background-color: red;
+      border-radius: 50px;
+      /*变换：scale（）元素缩放 n>1放大n倍 n=1大小不变 0<n<1缩小n倍 0缩小到看不见*/
+      transform: scale(2)  rotate(90deg);
+    }
+  </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

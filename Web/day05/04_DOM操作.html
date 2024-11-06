@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom</title>
+</head>
+<body>
+<button onclick="addMoney()">点我变富有</button>
+<hr>
+<script>
+    function addMoney(){
+        let imgE=document.createElement('img');/*创建img元素*/
+        imgE.src='img/money.jpg';/*设定img元素的路径*/
+        imgE.width=200;/*设定img元素的宽度*/
+        let bodyE=document.querySelector('body');/*找到body元素*/
+        bodyE.append(imgE);/*将上面创建好的img元素追加到body元素之后*/
+    }
+</script>
+</body>
+</html>

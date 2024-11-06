@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM2</title>
+</head>
+<body>
+<input type="text" id="i1">
+<input type="text" id="i2">
+<button onclick="f1()">按钮1</button>
+<hr>
+<h4>我是标题：<span id="ss"></span></h4>
+<button onclick="f2()">按钮2</button>
+<script>
+    function f1(){
+        console.log(i1.value,typeof i1.value);
+        let a=parseFloat(i1.value);
+        console.log(a,typeof a);
+    }
+    function f2(){
+        let spanE=document.getElementById('ss');
+        console.log(spanE);
+        ss.innerHTML='你好';
+    }
+</script>
+</body>
+</html>

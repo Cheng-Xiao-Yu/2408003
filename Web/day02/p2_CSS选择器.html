@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p2_CSS选择器</title>
+
+    <style>
+        h4{
+            color: red;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        /*id选择器，只能选择一个*/
+        #h2{
+            background-color: blue;
+        }
+        .error{
+            background-color: red;
+        }
+        .success{
+            background-color: green;
+        }
+        .msg{
+            color: white;
+        }
+        #h2,.error,p{
+            border: 5px solid pink;/*边框宽度，线型，颜色*/
+        }
+        *{
+            font-style: italic; /*文字样式：斜体*/
+        }
+        /*属性选择器*/
+        [type="text"]{
+            background-color: aqua;
+        }
+        /*选择器紧挨着写是与的关系，必须同时满足才生效（：hover和#d1）*/
+        /*:hover 伪类选择器的一种，选中悬停在元素时的状态*/
+        :hover#d1{
+            background-color: pink;
+        }
+/*        伪类选择器 ：link未被访问过 ：visited已被访问过 ：hover悬停 ：active激活*/
+        a:link{
+            color: gray;
+        }
+        a:visited{
+            color:green;
+        }
+        a:hover{
+            color: orange;
+        }
+        a:active{
+            color: red;
+        }
+        /*后代选择器（空格）：选中包含在内的所有下层元素→儿子、孙子、重孙子。。。*/
+        #d2 span{
+            background-color: blue;
+        }
+        /*直接子代选择器（>）：选中当前元素的直接子元素，不会直接向下选择*/
+        #d2>div>span{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<div id="d2">
+    <span>1</span>
+    <div>
+        <span>2</span>
+        <p>测试文字</p>
+        <p>我是<span>测试</span>段落</p>
+    </div>
+</div>
+<h4>标题</h4>
+<p>段落</p>
+<a href="#">超链接</a>
+<h4 id="h2">标题</h4>
+<div id="d1">div1</div>
+<div>div2</div>
+<div>div3</div>
+<br>
+<span class="error msg">用户名不能为空</span>
+<span class="error msg">密码不能为空</span>
+<span class="success msg">用户名格式正确</span>
+<span class="success msg">密码格式正确</span>
+<br>
+<input type="text">
+<input type="password">
+<br>
+<a href="https://www.baidu.com" target="_blank" id="a1">超链接1</a>
+<a href="abc" target="_blank">超链接2</a>
+</body>
+</html>

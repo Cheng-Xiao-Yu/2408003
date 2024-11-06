@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09_绝对定位</title>
+    <style>
+        .fu{
+            background-color: #ff0;
+            width: 1000px;
+            /*子绝父相：使用了绝对定位的子元素*/
+            position: relative;
+            margin: 0 auto;
+        }
+        .fu>div{
+            width: 100px;
+            height: 100px;
+        }
+        .z1{
+            background-color: #F00;
+        }
+        .z2{
+            background-color: #0F0;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .z3{
+             background-color: #00F;
+         }
+    </style>
+</head>
+<body>
+<div class="fu">
+    <div class="z1"></div>
+    <div class="z2"></div>
+    <div class="z3"></div>
+</div>
+</body>
+</html>

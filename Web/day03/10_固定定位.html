@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10_固定定位</title>
+    <style>
+        .fu{
+            background-color: #ff0;
+        }
+        .fu>div{
+            width: 100px;
+            height: 100px;
+        }
+        .z1{
+            background-color: #F00;
+        }
+        .z2{
+            background-color: #0F0;
+            /*固定定位：会脱离文档流 释放布局空间
+            移动参照物：html根元素*/
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+        .z3{
+             background-color: #00F;
+         }
+    </style>
+</head>
+<body>
+<div class="fu">
+    <div class="z1"></div>
+    <div class="z2"></div>
+    <div class="z3"></div>
+</div>
+</body>
+</html>
