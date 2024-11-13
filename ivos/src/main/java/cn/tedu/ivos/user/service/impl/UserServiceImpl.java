@@ -25,8 +25,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserVO login(UserLoginParam userLoginParam) {
-        log.debug("用户登录业务，参数：{}", userLoginParam);
+        log.debug("用户登录信息加载到业务层：{}",userLoginParam);
         UserVO userVO = userMapper.selectByUsername(userLoginParam.getUsername());
+        log.debug("登录完成，登录信息返回到业务层：{}",userVO);
         if(userVO==null){
             throw new ServiceException(StatusCode.USERNAME_ERROR);
         }
@@ -38,24 +39,26 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<UserVO> selectUser(UserQuery userQuery) {
-        log.debug("查询用户业务，参数：{}",userQuery);
+        log.debug("业务层获取到用户输入的信息：{}，准备开始查询",userQuery);
         List<UserVO>list=userMapper.selectUser(userQuery);
-        log.debug("从数据库中查询返回的list{}",list);
+        log.debug("查询完成，业务层获得查询结果：{}，开始传给前端",list);
         return list;
     }
     @Override
     public void saveUser(UserSaveParam userSaveParam) {
-        log.debug("保存用户业务，参数：{}", userSaveParam);
+        log.debug("用户信息加载到业务层，开始保存：{}",userSaveParam);
         User user = new User();
         BeanUtils.copyProperties(userSaveParam,user);
         if(user.getId()==null){//新增操作
             user.setPassword("123456");
             user.setCreateTime(new Date());
             userMapper.insert(user);
+            log.debug("保存完成，保存结果返回至业务层");
         }else{
             //TODO:修改用户
             user.setUpdateTime(new Date());
             userMapper.update(user);
+            log.debug("更新完成，更新结果返回至业务层");
         }
     }
     @Override

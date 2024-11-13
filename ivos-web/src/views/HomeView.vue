@@ -31,7 +31,7 @@
             <el-icon style="font-size: 21px;"><User/></el-icon>
             <span>用户管理</span>
           </template>
-          <el-menu-item index="/vehicle">用户列表</el-menu-item>
+          <el-menu-item index="/user">用户列表</el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="2">
           <template #title>
@@ -76,7 +76,7 @@
           <el-col :span="6" style="position: relative;">
             <el-dropdown trigger="click" style="position: absolute;right: 20px;">
               <span style="font-size:19px;font-weight: bold;">
-                {{vehicle.username}}
+                {{user.username}}
                 <el-icon><arrow-down/></el-icon>
               </span>
               <template #dropdown>
@@ -112,18 +112,18 @@ const changeCollapsed=()=>{
 //定义变量控制左侧菜单栏是否折叠
 const isCollapse = ref(false);
 //调用全局对象window中设置的方法,获取当前登录的用户名
-const vehicle = ref(getUser());
+const user = ref(getUser());
 const logout=()=>{
   if (confirm('您确定要退出登录吗')){
-    localStorage.removeItem('vehicle');
+    localStorage.removeItem('user');
     localStorage.removeItem('breadCrumb');
     window.location.href='/login';
-    vehicle.value='';
+    user.value='';
   }
 }
 const breadcrumb=ref(JSON.parse(localStorage.getItem('breadCrumb'))||['用户管理','用户列表'])
 let map = {
-  '/vehicle':['用户管理','用户列表'],
+  '/user':['用户管理','用户列表'],
   '/vehicle':['车辆管理','基本信息'],
   '/geofence':['电子围栏','围栏管理'],
   '/application':['调度管理','申请列表'],
