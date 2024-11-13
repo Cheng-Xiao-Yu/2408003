@@ -7,10 +7,10 @@
   </el-table>
   <br>
   <el-table :data="arr" style="width: 600px;margin: 0 auto">
-    <el-table-column align="center" type="index" label="编号" width="180" />
-    <el-table-column prop="name" label="姓名" width="180" />
-    <el-table-column prop="salary" label="工资" width="180" />
-    <el-table-column prop="job" label="岗位" />
+    <el-table-column align="center" type="index" label="编号" width="180" ></el-table-column>
+    <el-table-column prop="name" label="姓名" width="180"></el-table-column>
+    <el-table-column prop="salary" label="工资"width="180"></el-table-column>
+    <el-table-column prop="job" label="岗位" ></el-table-column>
     <el-table-column label="操作">
       <template #default="scope">
         <el-button type="danger" @click="del(scope.$index,scope.row)">删除</el-button>
@@ -50,8 +50,8 @@ const arr=ref([
     {name:'张三',salary:3000,job:'维修员'},
     {name:'张三',salary:3000,job:'维修员'},
 ])
-const del=(index,emp)=>{
-  if (confirm('是否确认删除'+emp)){
+const del=(index,emp1)=>{
+  if (confirm('是否确认删除'+emp1.name)){
     arr.value.splice(index,1)
   }
 }

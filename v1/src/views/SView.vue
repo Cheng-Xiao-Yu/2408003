@@ -1,6 +1,7 @@
 <template>
   <h1>EL-菜单组件</h1>
-  <el-menu mode="horizontal" @select="handleSelect" background-color="#4f8dfe" text-color="#fff" active-text-color="#ffd04b">
+  <el-menu mode="horizontal" @select="handleSelect" background-color="#4f8dfe"
+           default-active='4' text-color="#fff" active-text-color="#ffd04b">
     <el-menu-item index="1">首页</el-menu-item>
     <el-menu-item index="2">直播课</el-menu-item>
     <el-menu-item index="3">免费课</el-menu-item>

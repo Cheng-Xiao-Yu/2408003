@@ -21,12 +21,14 @@
     <router-link to="/p">El-开关组件</router-link> |
     <router-link to="/q">El-表单组件</router-link> |
     <router-link to="/r">El-表格组件</router-link> |
+    <router-link to="/r1">El-表格组件</router-link> |
     <router-link to="/s">El-菜单组件</router-link> |
+    <br>
     <router-link to="/t">El-分栏布局组件</router-link> |
-    <router-link to="/u">El-组件</router-link> |
-    <router-link to="/v">El-组件</router-link> |
-    <router-link to="/w">El-组件</router-link> |
-    <router-link to="/x">El-组件</router-link> |
+    <router-link to="/u">El-轮播图组件</router-link> |
+    <router-link to="/v">El-布局容器组件</router-link> |
+    <router-link to="/w">El-卡片组件</router-link> |
+    <router-link to="/x">El-日期时间选择器组件</router-link> |
     <router-link to="/y">El-组件</router-link> |
     <router-link to="/z">El-组件</router-link> |
   </nav>

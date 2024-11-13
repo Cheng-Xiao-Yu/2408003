@@ -6,12 +6,12 @@
   <input type="text" v-model="info">
   {{info}}
   <h3>用户注册</h3>
-  {{user}}
-  <input type="text" placeholder="请输入用户名" v-model="user.username">
-  <input type="password" placeholder="请输入密码" v-model="user.password">
+  {{vehicle}}
+  <input type="text" placeholder="请输入用户名" v-model="vehicle.username">
+  <input type="password" placeholder="请输入密码" v-model="vehicle.password">
   <br>性别:
-  <input type="radio" name="gender" value="1" v-model="user.gender">男
-  <input type="radio" name="gender" value="0" v-model="user.gender">女
+  <input type="radio" name="gender" value="1" v-model="vehicle.gender">男
+  <input type="radio" name="gender" value="0" v-model="vehicle.gender">女
   <br>
   <button @click="reg">点我注册</button>
 </template>
@@ -22,17 +22,17 @@ import {ref} from "vue";
 const info = ref('我是初始值');
 
 //定义一个对象用来保存注册表单中的用户数据
-const user = ref({
+const vehicle = ref({
   username: '',
   password: '',
   gender: ''
 });
 //定义一个注册用户的方法
 const reg = ()=>{
-  console.log(user.value);
-  console.log(user.value.username);
-  console.log(user.value.password);
-  console.log(user.value.gender);
+  console.log(vehicle.value);
+  console.log(vehicle.value.username);
+  console.log(vehicle.value.password);
+  console.log(vehicle.value.gender);
 }
 </script>
 
