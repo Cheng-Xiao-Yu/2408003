@@ -1,11 +1,10 @@
+<!--电子围栏页 GeofenceView.vue-->
 <template>
-<h1>围栏管理页</h1>
-</template>
 
+</template>
 <script setup>
 
 </script>
 
 <style scoped>
-
 </style>

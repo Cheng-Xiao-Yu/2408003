@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.tedu.ivos.geofence.mapper.GeofenceMapper">
+    <select id="selectGeofence" resultType="cn.tedu.ivos.geofence.pojo.vo.GeofenceVO">
+        SELECT id,name,status,position,create_time
+        FROM geofence
+        <where>
+            <if test="id!=null">
+                id=#{id}
+            </if>
+            <if test="name!=null and name!=''">
+                AND name=#{name}
+            </if>
+            <if test="status!=null and status!=''">
+                AND status=#{status}
+            </if>
+        </where>
+        ORDER BY create_time DESC
+    </select>
+
+    <insert id="insert">
+        INSERT INTO geofence(id,name,status,position,create_time)
+        VALUES(#{id},#{name},#{status},#{position},#{createTime})
+    </insert>
+
+     <update id="update">
+        UPDATE geofence
+        <set>
+            <if test="status!=null and status!=''">
+                status=#{status},
+            </if>
+            <if test="updateTime!=null">
+                update_time=#{updateTime}
+            </if>
+        </set>
+        WHERE id=#{id}
+     </update>
+    <delete id="deleteGeofence">
+        DELETE FROM geofence WHERE geofence_id=#{geofenceId}
+    </delete>
+</mapper>

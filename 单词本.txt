@@ -126,3 +126,36 @@ dialog      弹窗
 visible     可见的
 handle      处理
 filed       字段
+
+rejected    已拒绝
+mismatch    不匹配
+bind        绑定
+reset       重置
+search      查询
+desc        降序
+available   可用的
+total       总计
+query       查询
+param       参数
+formatter   格式转换
+circle      圆形
+radius      半径
+rectangle   矩形
+point       点
+longitude   经度
+latitude    纬度
+
+map         地图
+container   容器
+center      中心点
+zoom        缩放
+scene       场景
+control     控制/控件
+enable      启用
+tips        提示
+anchor      锚点/定位
+operate     操作
+event       事件
+complete    完成
+overlay     覆盖物
+instanceof  判断对象是否为某个类的实例

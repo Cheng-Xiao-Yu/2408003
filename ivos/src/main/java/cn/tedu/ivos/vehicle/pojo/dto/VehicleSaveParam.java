@@ -1,13 +1,12 @@
-package cn.tedu.ivos.vehicle.pojo.vo;
+package cn.tedu.ivos.vehicle.pojo.dto;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
-
 @Data
-public class VehicleVO {
+public class VehicleSaveParam {
     @ApiModelProperty(value = "车辆id")
     private Long id;
     @ApiModelProperty(value = "车辆品牌")
@@ -28,23 +27,18 @@ public class VehicleVO {
     private String color;
     @ApiModelProperty(value = "车辆里程数")
     private String kilometers;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @ApiModelProperty(value = "车辆上牌时间")
+    private Date regTime;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @ApiModelProperty(value = "车辆购买时间")
+    private Date buyTime;
     @ApiModelProperty(value = "车辆购买价格")
     private String price;
     @ApiModelProperty(value = "车辆电池类型")
     private String batteryType;
-    @ApiModelProperty(value = "车辆创建时间")
-    private Date createTime;
-    @ApiModelProperty(value = "车辆更新时间")
-    private Date updateTime;
     @ApiModelProperty(value = "电子围栏绑定状态")
     private String geofenceBindStatus;
     @ApiModelProperty(value = "电子围栏id")
     private Long geofenceId;
-    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
-    @ApiModelProperty(value = "车辆购买时间")
-    private Date buyTime;
-    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
-    @ApiModelProperty(value = "车辆上牌时间")
-    private Date regTime;
 }
-

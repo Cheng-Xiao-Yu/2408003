@@ -9,9 +9,15 @@ import java.util.List;
 
 @Repository
 public interface VehicleMapper {
-    VehicleVO selectByUsername(String username);
-    List<VehicleVO> selectUser(VehicleQuery vehicleQuery);
+    List<VehicleVO> selectVehicle(VehicleQuery vehicleQuery);
+
     void insert(Vehicle vehicle);
+
     void update(Vehicle vehicle);
-    void delete(Long userId);
+
+    void deleteVehicle(Long id);
+
+    void unbindById(Vehicle vehicle);
+
+    void updateGeofenceId(Vehicle vehicle);
 }
